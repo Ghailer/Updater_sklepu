@@ -29,7 +29,6 @@ namespace Sklep_internetowy_wersja_graf
             Updater.OldDataCheck(ref produkty, ref produktynew, FileGenerator, updateGroupBox);  //Jesli plik istnieje, to wczytuje stara baze;  
             source = new BindingList<Produkt>(produkty);
             dataGridView1.DataSource = source;
-            //if (produkty.Count()>0) { last = produkty[produkty.Count - 1].id;} 
             if ((!File.Exists(@"data.txt") || (File.ReadLines(@"data.txt").Count() == 0))) 
             {
                 Produkt.CompareProduktLists(ref produkty, produktynew, NazwaCheckbox, CenaCheckbox, IloscCheckbox);
