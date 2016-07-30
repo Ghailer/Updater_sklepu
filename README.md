@@ -1,1 +1,0 @@
-# Updater_sklepu
