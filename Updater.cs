@@ -105,7 +105,7 @@ namespace Sklep_internetowy_wersja_graf
             {
                 writer.Write("UPDATE oc_product SET model='{0}'", produkty[i].model);
                 if (name.Checked)
-                { writer2.Write("UPDATE oc_product_description SET name='{0} WHERE product_id={1};\r\n", produkty[i].name, produkty[i].id); }
+                { writer2.Write("UPDATE oc_product_description SET name='{0}' WHERE product_id={1};\r\n", produkty[i].name, produkty[i].id); }
                 writer.Write(", sku='{0}'", produkty[i].sku);
                 writer.Write(", upc='{0}'", produkty[i].upc); 
                 if (quantity.Checked)
